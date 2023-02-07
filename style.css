@@ -1,0 +1,120 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html,body {
+	font-size: 1.66vw;
+	font-family: "dog";
+    font-feature-settings: 'tnum';
+    -webkit-font-feature-settings: 'tnum';
+    -moz-font-feature-settings: 'tnum';
+    background: lightgrey;
+	line-height: 118%;
+    text-rendering: geometricPrecision;
+}
+
+/*
+.marquee {
+    width: 100vw;
+    max-width: 100%;
+    height: 2vw;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 5px;
+    overflow-x: hidden;
+}
+*/
+.marquee {
+    width: 100vw;
+    max-width: 100%;
+    height: 1.66vw;
+    margin-top: 0.8vw;
+    margin-bottom: 0.4vw;
+    overflow-x: hidden;
+}
+  
+.marquee a {
+    text-decoration: none;
+    color: #000;
+}
+
+.marquee a:hover {
+    opacity: 20%;
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 45s linear infinite;
+}
+
+.track:hover {
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.nav {
+	width: 100vw;
+	display:flex;
+    letter-spacing: .02em;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav a:hover {
+    opacity: 20%;
+}
+
+.quarter {
+	width:25vw;
+	padding: 5px 10px;
+    padding-right: 40px;
+}
+
+.third {
+	width:33.3vw;
+	padding: 0.4vw 0.8vw;
+    padding-right: 2vw;
+}
+
+.active {
+    opacity: 20%;
+}
+
+.hide {
+    display: none;
+}
+
+.showList span {
+    margin-right: 5px;
+    line-height: 128%;
+}
+
+.splitTopBottom {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.infoLinks {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0.4vw;
+}
+
+@font-face {
+    font-family: dog;
+    src: url(sunset-gothic-italic-pro.woff2);
+}
